@@ -19,7 +19,8 @@ const Signup = () => {
       password
     }).then(response =>{
       if(response.data.status){
-        navigate('/login')
+        navigate('/')
+        alert("Signup successful");
       }
       
     }).catch(err =>{

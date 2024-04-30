@@ -21,7 +21,8 @@ const ResetPassword = () => {
     }).then(response =>{
       if(response.data.status){
        
-        navigate('/login')
+        navigate('/');
+        alert("Password reset was successful")
       }
       console.log(response.data);
     }).catch(err =>{

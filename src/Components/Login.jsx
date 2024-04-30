@@ -20,7 +20,8 @@ const Login = () => {
       password
     }).then(response =>{
       if(response.data.status){
-        navigate('/home')
+       
+        alert("Login Successful");
       }else{
         alert("Invalid credentials");
       }
